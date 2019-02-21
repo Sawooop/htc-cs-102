@@ -27,14 +27,14 @@ namespace ClassesIntro
 
         private void Bark_Button_Click(object sender, RoutedEventArgs e)
         {
-            Dog dog = new Dog();
+            Dog dog = new Dog("Harley", "German Shepard", 15, true);
             dog.Bark();
         }
 
         private void SayName_Button_Click(object sender, RoutedEventArgs e)
         {
-            Dog somethingelse = new ClassesIntro.Dog();
-            somethingelse.name = "Harley";
+            Dog somethingelse = new ClassesIntro.Dog("Harley", "German Shepard", 15, true);
+            somethingelse.Name = "Harley";
             somethingelse.SayName();
         }
     }
