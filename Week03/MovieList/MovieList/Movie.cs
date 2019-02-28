@@ -5,11 +5,18 @@ namespace MovieList
 {
     public class Movie
     {
-        public string Name;
-        public int ReleaseDate;
-        public Movie(string name, int releaseDate)
+        private string Name;
+        private int ReleaseDate;
+        private double RunTime;
+        public Movie(string name, int releaseDate, double runTime)
         {
-
+            Name = name;
+            ReleaseDate = releaseDate;
+            RunTime = runTime;
+        }
+        public void ShowMovie()
+        {
+            MessageBox.Show(Name + Environment.NewLine + ReleaseDate + "\n" + RunTime);
         }
     }
 }
