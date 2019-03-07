@@ -7,10 +7,9 @@ using System.Windows;
 
 namespace InheritanceIntro
 {
-    public class Dog
+    public class Dog : Aminal
     {
-        public string Name;
-        public int Height;
+
         public string Breed;
 
         public void Bark()
@@ -18,10 +17,6 @@ namespace InheritanceIntro
             MessageBox.Show("Bark");
         }
 
-        public void SayName()
-        {
-            MessageBox.Show("My name is " + this.Name);
-        }
 
         public Dog() { }
 
