@@ -10,8 +10,10 @@
         <ListView Name="lvMovies" Height="150px" Margin="0,0,0,10" MouseDoubleClick="lvMovies_MouseDoubleClick">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="150" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
-                    <GridViewColumn Width="100" Header="Release Year" DisplayMemberBinding="{Binding ReleaseYear}"></GridViewColumn>
+                    <GridViewColumn Width="125" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
+                    <GridViewColumn Width="125" Header="Release Year" DisplayMemberBinding="{Binding ReleaseYear}"></GridViewColumn>
+                    <GridViewColumn Width="125" Header="Animation Studio" DisplayMemberBinding="{Binding AnimationStudio}"></GridViewColumn>
+                    <GridViewColumn Width="125" Header="Animation Type" DisplayMemberBinding="{Binding AnimationType}"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -19,6 +21,10 @@
         <TextBox Name="titleInput" Margin="0,0,0,15"></TextBox>
         <TextBlock>Release Year</TextBlock>
         <TextBox Name="releaseYearInput" Margin="0,0,0,15"></TextBox>
+        <TextBlock>Animation Studio</TextBlock>
+        <TextBox Name="animationStudioInput" Margin="0,0,0,15"></TextBox>
+        <TextBlock>Animation Type</TextBlock>
+        <TextBox Name="animationTypeInput" Margin="0,0,0,15"></TextBox>
         <Button Click="AddButton_Click" HorizontalAlignment="Center" Margin="0,0,0,10">Add</Button>
         
         <!-- Border surrounding Animated Movie options -->
@@ -28,5 +34,6 @@
                 
             </StackPanel>
         </Border>
+        <Button x:Name="AddAnimatedMovie" Content="Add Animated Movie" Click="AddAnimatedMovie_Click"/>
     </StackPanel>
 </Window>
