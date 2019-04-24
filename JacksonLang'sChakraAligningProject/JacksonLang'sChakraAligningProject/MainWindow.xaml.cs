@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JacksonLangsChakraAligningProject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,9 @@ namespace JacksonLang_sChakraAligningProject
         private void button_Click(object sender, RoutedEventArgs e)
         {
             string search = textBox.Text;
+
+          
+
             BaseSearch test = new BaseSearch(search);
             if (search.IndexOf('?') > -1)
             {
@@ -38,6 +42,8 @@ namespace JacksonLang_sChakraAligningProject
                 test.WikipediaPage();
             }
             textBox.Clear();
+            articleImage.Source = 
+
         }
     }
         
