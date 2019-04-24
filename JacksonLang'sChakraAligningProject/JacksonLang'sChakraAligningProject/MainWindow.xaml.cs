@@ -42,7 +42,7 @@ namespace JacksonLang_sChakraAligningProject
                 test.WikipediaPage();
             }
             textBox.Clear();
-            articleImage.Source = 
+            //test.wp.ImageURL;
 
         }
     }

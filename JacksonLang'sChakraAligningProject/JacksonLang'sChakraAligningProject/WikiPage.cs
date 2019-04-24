@@ -15,6 +15,5 @@ namespace JacksonLangsChakraAligningProject
         public string ImageURL { get { return originalimage[0]; } }
 
 
-        //public string info ()
     }
 }

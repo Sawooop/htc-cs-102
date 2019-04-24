@@ -13,6 +13,7 @@ namespace JacksonLang_sChakraAligningProject
     class BaseSearch
     {
         private string Search;
+        public WikiPage wp;
         public BaseSearch(string sarch)
         {
             Search = sarch.Replace(' ', '_'); ;
@@ -36,9 +37,7 @@ namespace JacksonLang_sChakraAligningProject
                         string responseBody = await response.Content.ReadAsStringAsync();
                         // Above three lines can be replaced with new helper method below
                         // string responseBody = await client.GetStringAsync(uri);
-                        var page = JsonConvert.DeserializeObject<WikiPage>(responseBody);
-                        
-
+                        wp = JsonConvert.DeserializeObject<WikiPage>(responseBody);
 
                         //MessageBox.Show(responseBody);
                     }
