@@ -12,7 +12,7 @@
             <TextBox x:Name="textBox" Height="33" TextWrapping="Wrap" Text="Look Something Up" Width="517"/>
             <Image x:Name="articleImage" Height="219" Canvas.Left="2" Canvas.Top="100" Width="223"/>
         </Canvas>
-        <TextBlock x:Name="IdentifiedData" HorizontalAlignment="Left" Height="227" Margin="229,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288"><Run Text="TextBlock"/></TextBlock>
+        <TextBlock x:Name="IdentifiedData" HorizontalAlignment="Left" Height="227" Margin="229,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288"><Run Text=""/></TextBlock>
 
     </Grid>
 </Window>

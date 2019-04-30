@@ -35,7 +35,7 @@ namespace JacksonLang_sChakraAligningProject
             BaseSearch test = new BaseSearch(search);
             if (search.IndexOf('?') > -1)
             {
-                test.Question();
+                //test.Question();
             }
             else
             {

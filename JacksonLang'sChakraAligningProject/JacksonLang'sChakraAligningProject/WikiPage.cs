@@ -10,9 +10,10 @@ namespace JacksonLangsChakraAligningProject
     {
         public string title { get; set; }
         public string extract { get; set; }
-        public string[] originalimage { get; set; }
+        public string originalimage { get; set; }
 
-        public string ImageURL { get { return originalimage[0]; } }
+        //public string ImageURL { get { return originalimage[0]; } }
+
 
 
     }

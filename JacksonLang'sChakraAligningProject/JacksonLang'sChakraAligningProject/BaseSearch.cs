@@ -32,12 +32,14 @@ namespace JacksonLang_sChakraAligningProject
                         HttpResponseMessage reeesponse = await client.GetAsync("https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=xmlfm&titles="+Search+"&rvsection=0");
                         string gaaa = await reeesponse.Content.ReadAsStringAsync();
                         //MessageBox.Show(gaaa);
-                        Identifier Id = new Identifier(gaaa);
+                        //MessageBox.Show(gaaa.Substring(gaaa.IndexOf("extract")+8,gaaa.Length-1));
+                        Identifier Id = new Identifier(gaaa, Search);
+                        Id.Identify();
                         response.EnsureSuccessStatusCode();
                         string responseBody = await response.Content.ReadAsStringAsync();
                         // Above three lines can be replaced with new helper method below
                         // string responseBody = await client.GetStringAsync(uri);
-                        wp = JsonConvert.DeserializeObject<WikiPage>(responseBody);
+                        //wp = JsonConvert.DeserializeObject<WikiPage>(responseBody);
 
                         //MessageBox.Show(responseBody);
                     }
@@ -55,10 +57,10 @@ namespace JacksonLang_sChakraAligningProject
             //make a few base classes (people, animals, objects, etc) based on the keywords
             //create a summary of the search in a window that appears alongside the wiki page
         }
-        public IIndentified Question()
-        {
+        //public IIndentified Question()
+        
             //search google or maybe look up wiki for keywords and return a window that rooughly answers the question
-        }
+        
 
     }
 }
